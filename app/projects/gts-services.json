@@ -1,0 +1,11 @@
+{
+	"description": "GTS Services in the Portland area hired me as their in-house designer/developer to completely revive their online presence. My first initiative was to rebrand the company geared towards expanding into markets the company was aiming to become a part of in the near future. They also had multiple websites that needed to be revived with updated design. I built these upon the WordPress CMS to enable other employees the ability to create and edit content.",
+	"id": "gts-services",
+  "images": [
+    "img/projects/gts-preview.jpg",
+    "img/projects/fiberfinish-preview.jpg",
+    "img/projects/OTRADI-preview.jpg",
+    "img/projects/paug-preview.jpg"
+  ],
+  "name": "GTS Services"
+}

@@ -1,0 +1,32 @@
+[
+	{
+		"id": "gts-services",
+		"client": "GTS Services",
+		"website": "http://gtsservices.com",
+		"type": "Website Design & Build, Branding",
+		"imageUrl": "img/projects/gts-preview.jpg",
+		"highlights":	[
+			"Complete overhaul of online presence",
+			"Multiple WordPress sites",
+			"Company rebranding",
+			"Content creation",
+			"Focus on SEO to search ranking"
+		],
+		"snippet": "GTS Services in the Portland area hired me as their in-house designer/developer to completely revive their online presence. My first initiative was to rebrand the company geared towards expanding into markets the company was aiming to become a part of in the near future. They also had multiple websites that needed to be revived with updated design. I built these upon the WordPress CMS to enable other employees the ability to create and edit content."
+	},
+	{
+		"id": "fiberfinish",
+		"client": "FiberFinish",
+		"website": "http://fiberfinish.com",
+		"type": "Website Design & Build, Branding",
+		"imageUrl": "img/projects/fiberfinish-preview.jpg",
+		"highlights":	[
+				"Complete website build using HTML5, CSS3, and jQuery",
+				"Company rebranding",
+				"Content creation",
+				"Focus on SEO to search ranking"
+		],
+		"snippet": "GTS Services in the Portland area hired me as their in-house designer/developer to completely revive their online presence. My first initiative was to rebrand the company geared towards expanding into markets the company was aiming to become a part of in the near future. They also had multiple websites that needed to be revived with updated design. I built these upon the WordPress CMS to enable other employees the ability to create and edit content."
+	}
+
+]

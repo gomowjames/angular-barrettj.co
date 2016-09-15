@@ -1,0 +1,21 @@
+<img ng-src="{{$ctrl.mainImageUrl}}" class="project" />
+
+<h1>{{$ctrl.project.name}}</h1>
+
+<p>{{$ctrl.project.description}}</p>
+
+<ul class="project-thumbs">
+  <li ng-repeat="img in $ctrl.project.images">
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Availability and Networks</span>
+    <dl>
+      <dt>Availability</dt>
+      <dd ng-repeat="availability in $ctrl.phone.availability">{{availability}}</dd>
+    </dl>
+  </li>
+</ul>

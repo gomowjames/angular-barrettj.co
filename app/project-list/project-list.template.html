@@ -1,0 +1,22 @@
+<ul>
+	<li ng-repeat="project in $ctrl.projects">
+		<article class="col-xs-12 project-wrapper">
+			<div class="col-md-offset-1 col-md-5 project-frame">
+				<a href="#!/projects/{{project.id}}">
+					<img ng-src="{{project.imageUrl}}" alt="{{project.client}} image" title="{{project.client}}" />
+				</a>
+			</div>
+			<div class="col-md-5 project-data">
+				<h2>{{project.type}}</h2>
+
+				<small>{{project.client}} - <a href="{{project.website}}">{{project.website}}</a></small>
+
+				<ul class="skills-list">
+					<li ng-repeat="highlight in project.highlights">{{project.highlights[$index]}}</li>
+				</ul>
+
+				<p>{{project.snippet}}</p>
+			</div> <!-- close .project-data -->
+		</article>
+	</li>
+</ul>
