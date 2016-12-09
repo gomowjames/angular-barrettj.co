@@ -1,32 +1,108 @@
 [
 	{
-		"id": "gts-services",
-		"client": "GTS Services",
-		"website": "http://gtsservices.com",
-		"type": "Website Design & Build, Branding",
-		"imageUrl": "img/projects/gts-preview.jpg",
+		"id": "sorel-lookbook",
+		"client": "Sorel Lookbook for R/West",
+		"website": "http://sorel-lookbook.com/Spring-2017",
+		"type": "Website Build",
+		"imageUrls": [
+			"img/projects/sorel-lookbook/sorel-preview.jpg",
+			"img/projects/sorel-lookbook/sorel-homepage-full-520.jpg",
+			"img/projects/sorel-lookbook/sorel-product-520.jpg"
+		],
+		"roles": "Lead Developer",
 		"highlights":	[
-			"Complete overhaul of online presence",
-			"Multiple WordPress sites",
+			"Contract assignment for design firm, R/West",
+			"Full implementation of Advanced Custom Fields for re-use of website",
+			"Built on Foundation 6 CSS Framework"
+		],
+		"snippet": "An online lookbook build using Wordpress CMS.",
+		"description1": "This was a contract job I was hired to come in and build for the Sorel shoe company based on design files that were to be passed my way. As it goes, there were many solutions I was in charge of coming up with that the design files did not necessarily iterate such as the utilization of slider within sliders in order to feature the various products and their variations.",
+		"description2": "The goal was to deliver an updatable online lookbook template to pass to vendors to preview upcoming product collections. Given the amount of possible updates, I completely built out the site connecting everything to an advanced custom field on the backend. All images, copy, and links, and copy are easily editable for a logged-in client and the site can be easily reused season to season."
+	},
+	{
+		"id": "daxx-nielsen",
+		"client": "Daxx Nielsen of Cheap Trick",
+		"website": "http://daxxnielsen.com",
+		"type": "Website Design & Setup",
+		"imageUrls": [
+			"img/projects/daxx-nielsen/daxx-preview.jpg",
+	    "img/projects/daxx-nielsen/daxx-homepage-520.jpg",
+	    "img/projects/daxx-nielsen/daxx-bio-520.jpg",
+			"img/projects/daxx-nielsen/daxx-tour-520.jpg"
+		],
+		"roles": "Lead Designer, Lead Developer",
+		"highlights":	[
+			"Complete implementation using Squarespace CMS"
+		],
+		"snippet": "A rock'n'roll drummer needing a more focused web presence.",
+		"description1": "Daxx Nielsen called me up to setup his Squarespace website after finally feeling the need to have a solid homebase for his music, photos, and social media feeds. Constant touring as the drummer for classic rock group Cheap Trick didn't allow for too much one-on-one time so much of the setup process was done remotely exchanging ideas back and forth. The site is setup through Squarespace, which provides a streamilined process for putting a website together so it was no problem setting up, and it was a great overall experience learning a new system and working with a world-class rock'n'roller."
+	},
+	{
+		"id": "fiberfinish",
+		"client": "FiberFinish, Inc.",
+		"website": "http://fiberfinish.com",
+		"type": "Website Design & Build, Branding",
+		"imageUrls": [
+			"img/projects/fiberfinish/fiberfinish-preview.jpg",
+	    "img/projects/fiberfinish/homepage-full-520.jpg",
+			"img/projects/fiberfinish/about-full-520.jpg",
+	    "img/projects/fiberfinish/identity-500.jpg"
+		],
+		"roles": "Lead Designer, Lead Developer",
+		"highlights":	[
+			"Complete website build using HTML5, CSS3, and jQuery",
 			"Company rebranding",
 			"Content creation",
 			"Focus on SEO to search ranking"
 		],
-		"snippet": "GTS Services in the Portland area hired me as their in-house designer/developer to completely revive their online presence. My first initiative was to rebrand the company geared towards expanding into markets the company was aiming to become a part of in the near future. They also had multiple websites that needed to be revived with updated design. I built these upon the WordPress CMS to enable other employees the ability to create and edit content."
+		"snippet": "A small business that was in need of a website, SEO, and an identity.",
+		"description1": "FiberFinish is a repair company from my hometown that was in need of a website as well as a facelift on their branding. They had a minimal online presence and wished to improve their Google search ranking to generate more business, but of course they had minimal budget. I set to work defining their target demographic they were most interested in expanding upon, which resulted in a light and fresh aesthetic but not too delicate that a remodeling contractor might not pick up the phone. I also generated a simple content strategy while creating their content that has improved their Google search rankings dramatically... putting them on page one for the related inquiries we targeted."
+	},
+{
+		"id": "otradi",
+		"client": "OTRADI Bioscience Incubator",
+		"website": "http://otradi.org/",
+		"type": "WordPress Customization",
+		"imageUrls": [
+			"img/projects/otradi/otradi-preview.jpg",
+			"img/projects/otradi/biomap-full-520.jpg"
+		],
+		"roles": "Lead Designer, Lead Developer",
+		"highlights":	[
+			"WordPress plugin customization",
+			"Customization through Google Maps API",
+			"Web design",
+			"JotForms implementation",
+			"Video editing"
+		],
+		"snippet": "A non-profit bioscience incubator in Portland that needed a system to map bioscience companies across the state of Oregon.",
+		"description1":"Through a word-of-mouth reference OTRADI reached out to me for someone to take control of the management of their main website. Prior to me coming onboard the website had been redesigned and developed using the popular Avada theme. Learning the in's and out's of this theme were no problem and offered great experience with getting comfortable with yet another widely utilized WordPress theme.",
+		"description2": "The most intense project I have worked on with OTRADI has been the customization of the Google Map plugin Map List Pro for use on the website as a visual directory of hundreds of biomedical start-ups across the state of Oregon. The map allows companies to add their own marker to the map (through the OTRADI JotForm account) and consistent participation has kept our database growing. The map has been featured in the Oregon Business Journal."
 	},
 	{
-		"id": "fiberfinish",
-		"client": "FiberFinish",
-		"website": "http://fiberfinish.com",
-		"type": "Website Design & Build, Branding",
-		"imageUrl": "img/projects/fiberfinish-preview.jpg",
-		"highlights":	[
-				"Complete website build using HTML5, CSS3, and jQuery",
-				"Company rebranding",
-				"Content creation",
-				"Focus on SEO to search ranking"
+		"id": "mkbr-wedding",
+		"client": "MK / BR Wedding",
+		"website": "http://barrettj.co/web/mkbr_wedding/index.html",
+		"type": "Wedding Website & Invitations",
+		"imageUrls": [
+			"img/projects/mkbr-wedding/mkbr-wedding-preview.jpg",
+	    "img/projects/mkbr-wedding/homepage_full_500.jpg",
+	    "img/projects/mkbr-wedding/monogram_500.jpg",
+	    "img/projects/mkbr-wedding/invite_scan_500.jpg",
+			"img/projects/mkbr-wedding/invites_zoom_450.jpg"
 		],
-		"snippet": "GTS Services in the Portland area hired me as their in-house designer/developer to completely revive their online presence. My first initiative was to rebrand the company geared towards expanding into markets the company was aiming to become a part of in the near future. They also had multiple websites that needed to be revived with updated design. I built these upon the WordPress CMS to enable other employees the ability to create and edit content."
+		"roles": "Lead Designer, Lead Developer",
+		"highlights":	[
+			"Internet hosting account setup",
+	    "WordPress installation & setup",
+	    "Website design",
+	    "Development of theme locally using MAMP, Node, Gulp, and Bower",
+	    "CSS3 SVG graphic animation",
+	    "Responsive design implemented using Bootstrap 3",
+	    "Wedding invitation design",
+			"Calligraphy envelope addressing"	
+		],
+		"snippet": "An exercise in putting a website up in 48 hours. I also took care of the invitations for this wedding.",
+		"description1": ""
 	}
-
 ]

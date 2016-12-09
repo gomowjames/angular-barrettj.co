@@ -1,0 +1,60 @@
+.sidebar {
+// 	box-shadow: 0 0 20px 0 #ccc;	
+}
+
+.sidebar > .row {
+	padding: 10px 0;
+	
+	@media #{$mediumAndAbove} {
+		padding: 30px;
+	}
+	
+	.sb-header-wrapper {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		text-align: center;
+
+		@media #{$mediumAndAbove} {
+			margin-top: 15px;
+			margin-bottom: 0;
+			text-align: left;
+		}		
+		
+		.sb-project-client {
+			margin-bottom: .5rem;
+
+		}
+		
+		p {
+			margin-bottom: 0;
+		}
+	}
+	
+	.sb-project-roles {
+		text-align: center;
+		
+		@media #{$mediumAndAbove} {
+			text-align: left;
+		}
+	}
+
+	.sb-project-content {
+		padding-right: 30px;
+	}
+
+	.sb-project-highlights {
+		margin-bottom: .5rem;
+	}
+
+	.sb-project-img {
+		text-align: center;
+
+		img {
+		margin-bottom: 15px;
+
+			@media #{$mediumAndAbove} {
+				margin-bottom: 30px;
+			}		
+		}
+	}
+}

@@ -1,0 +1,72 @@
+.btn {
+	background-color: $brand-primary;
+	color: #FFF;
+	padding-left: 26px;
+	padding-right: 26px;
+
+	&:hover {
+		background-color: darken($brand-primary, 10%);
+		color: darken(#FFFFFF, 10%);
+	}
+	
+	&:active,
+	&:focus, 
+	&.focus {
+		background-color: darken($brand-primary, 15%);
+		color: darken(#FFFFFF, 10%);
+	}
+}
+
+.more-btn {
+	margin: 1rem auto 0;
+	text-align: center;
+		
+	@media #{$mediumAndAbove} {
+		text-align: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.close-btn {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 200;
+  display: inline-block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+	cursor: pointer;
+
+  &:hover {
+    &::before, &::after {
+      background: $brand-primary;
+    }
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: lighten($brand-primary, 20%);
+		@extend .transition;
+  }
+  
+  &::before {
+    -webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+  }
+  
+  &::after {
+    -webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+  }
+}

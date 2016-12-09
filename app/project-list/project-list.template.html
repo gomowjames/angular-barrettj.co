@@ -1,22 +1,79 @@
-<ul>
-	<li ng-repeat="project in $ctrl.projects">
-		<article class="col-xs-12 project-wrapper">
-			<div class="col-md-offset-1 col-md-5 project-frame">
-				<a href="#!/projects/{{project.id}}">
-					<img ng-src="{{project.imageUrl}}" alt="{{project.client}} image" title="{{project.client}}" />
+<div class="row header work">
+	<div class="col-sm-offset-1 col-sm-10">
+		<h1>More work</h1>
+	</div>
+</div>
+
+<ul class="">
+	<li class="row project-wrapper project-list-item" ng-repeat="project in $ctrl.projects">
+	
+		<div ng-controller="pageslideCtrl">
+
+			<div class="col-sm-offset-1 col-sm-4 project-frame">
+	
+				<h2 class="visible-xs-block project-client">{{project.client}}</h2>
+				<p class="visible-xs-block project-type">{{project.type}}</p>
+				<p class="visible-xs-block project-roles">{{project.roles}}</p>
+	
+	<!--
+				<a href="#!/work/{{project.id}}">
+					<img ng-src="{{project.imageUrls[0]}}" alt="{{project.client}} image" title="{{project.client}}" />
 				</a>
+	-->
+				<a class="preview" href="#" ng-click="toggle()"><img ng-src="{{project.imageUrls[0]}}" alt="{{project.client}} image" title="{{project.client}}" /></a>
+	
 			</div>
-			<div class="col-md-5 project-data">
-				<h2>{{project.type}}</h2>
 
-				<small>{{project.client}} - <a href="{{project.website}}">{{project.website}}</a></small>
-
-				<ul class="skills-list">
+			<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 project-data">
+				<h2 class="hidden-xs project-client">{{project.client}}</h2>
+				<p class="hidden-xs project-type">{{project.type}}</p>
+				<p class="hidden-xs project-roles">{{project.roles}}</p>
+	
+				<ul class="project-highlights">
 					<li ng-repeat="highlight in project.highlights">{{project.highlights[$index]}}</li>
 				</ul>
+	
+				<p class="project-snippet">{{project.snippet}}</p>
+	
+				<div class="more-btn">
+	        <a class="btn" href="" ng-click="toggle()">View more project details</a>
+				</div>
 
-				<p>{{project.snippet}}</p>
+				<div pageslide ps-size="95%" ps-open="checked" ps-body-class="true" ps-click-outside="true" class="container sidebar">
+          <div class="row">					
+						<a ng-click="toggle()" class="button close-btn"></a>
+
+						<div class="col-xs-12 sb-header-wrapper">
+							<h2 class="sb-project-client">{{project.client}}</h2>
+							<p class="sb-project-type">{{project.type}}</p>
+							<p class="sb-project-roles">{{project.roles}}<p>
+						</div> <!-- close .project-header-wrapper -->
+          </div>
+
+          <div class="row">	          
+						<ul class="col-xs-12 col-sm-6 col-sm-push-6 project-thumbs">
+						  <li class="sb-project-img" ng-repeat="img in project.imageUrls" ng-if="$index > 0">
+								<img ng-src="{{img}}" alt="{{project.client}} image" title="{{project.client}}" />
+						  </li>
+						</ul>
+
+						<div class="col-xs-12 col-sm-6 col-sm-pull-6 project-content">
+							<p class="sb-project-description">{{project.description1}}</p>
+							<p class="sb-project-description">{{project.description2}}</p>
+				
+							<ul class="sb-project-highlights">
+								<li ng-repeat="highlight in project.highlights">{{project.highlights[$index]}}</li>
+							</ul>
+							<p class="sb-live-url">The full website can be viewed here: <a href="{{project.website}}">{{project.website}}</a></p>
+						</div> <!-- close .project-content -->
+          
+          </div> <!-- close .row -->
+        </div> <!-- close .container -->
 			</div> <!-- close .project-data -->
-		</article>
-	</li>
+		</div> <!-- close pageslideCtrl -->
+
+		<div class="col-xs-12">
+			<div class=" line-break"></div>
+		</div>
+	</li>	
 </ul>

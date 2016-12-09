@@ -1,0 +1,43 @@
+<div class="row introduction" ng-include='"views/introduction.html"'></div>
+
+<div id="work" class="row header work">
+	<div class="col-sm-offset-1 col-sm-10">
+		<h1>Featured work</h1>
+	</div>
+</div>
+	
+<div class="row project-wrapper featured">
+	<div class="col-sm-6 col-sm-push-5 project-data">
+		<h2 class="project-client">{{$ctrl.project.client}}</h2>
+		<p class="project-roles">{{$ctrl.project.roles}}</p>
+
+		<div class="project-frame project-img visible-xs-block">
+				<img ng-src="{{$ctrl.mainImageUrl}}" class="project-featured" />
+		</div>
+		
+		<ul class="project-highlights">
+			<li ng-repeat="highlight in $ctrl.project.highlights">{{$ctrl.project.highlights[$index]}}</li>
+		</ul>
+
+		<p>{{$ctrl.project.description1}}</p>
+		<p>{{$ctrl.project.description2}}</p>
+		<p class="live-url">The website can be viewed here: <a href="{{$ctrl.project.website}}">{{$ctrl.project.website}}</a>
+		</p>
+	
+		<ul class="clearfix hidden-xs project-featured-thumbs">
+		  <li class="col-xs-6 col-sm-2" ng-repeat="img in $ctrl.project.images">
+		    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+		  </li>
+		</ul>
+	</div> <!-- close .project-meta -->
+
+	<div class="project-frame project-img hidden-xs col-sm-offset-1 col-sm-4 col-sm-pull-6">
+			<img ng-src="{{$ctrl.mainImageUrl}}" class="project-featured" />
+
+<!--
+		<a href="{{$ctrl.mainImageUrl}}">
+			<img ng-src="{{$ctrl.mainImageUrl}}" class="project-featured" />
+		</a>
+-->
+	</div>
+</div> <!-- .project-wrapper -->

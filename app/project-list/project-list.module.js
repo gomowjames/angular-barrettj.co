@@ -1,2 +1,1 @@
-// Define the 'projectApp' module
-angular.module('projectList', []);
+angular.module('projectList', ['core.project']);

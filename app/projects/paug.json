@@ -1,0 +1,18 @@
+	{
+		"id": "paug",
+		"client": "Portland Access User Group",
+		"website": "http://paug.com",
+		"type": "WordPress Membership Site",
+		"imageUrls": [
+			"img/projects/paug/paug-preview.jpg"
+		],
+		"roles": "Lead Designer, Lead Developer",
+		"highlights":	[
+			"WordPress installation & setup",
+			"Development of theme locally using MAMP, Node, Gulp, and Bower",
+			"Gravity Forms customization and add-on setup",
+			"Membership registration setup"
+		],
+		"snippet": "PAUG contracted me to convert their site to a WordPress membership site that could take payment as well as keep track of conference registrations.",
+		"description1": ""	
+	},

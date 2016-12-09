@@ -1,0 +1,30 @@
+				<div pageslide ps-size="90%" ps-open="checked" ps-body-class="true" ps-click-outside="true" class="container sidebar">
+					
+          <div class="row">
+
+						<a ng-click="toggle()" class="button close-btn" ></a>
+
+						<div class="col-xs-12 project-header-wrapper">
+							<h3 class="project-client">{{project.client}}</h3>
+							<p class="project-type">{{project.type}}</p>
+							<p class="project-roles">{{project.roles}}</p>
+						</div> <!-- close .project-header-wrapper -->
+						
+						<div class="col-sm-6 project-content">
+							<p class="project-description">{{project.description1}}</p>
+				
+							<ul class="project-highlights">
+								<li ng-repeat="highlight in project.highlights">{{project.highlights[$index]}}</li>
+							</ul>
+							<p class="live-url">The full website can be viewed here: <a href="{{project.website}}">{{project.website}}</a></p>
+						</div> <!-- close .project-data-wrapper -->
+
+						<ul class="col-sm-6 project-thumbs">
+						  <li class="project-img" ng-repeat="img in project.imageUrls" ng-if="$index > 0">
+								<img ng-src="{{img}}" alt="{{project.client}} image" title="{{project.client}}" />
+<!-- 								    <img ng-src="{{img}}" ng-click="setImage(img)" /> -->
+						  </li>
+						</ul>
+
+          </div>
+        </div> <!-- close .container -->

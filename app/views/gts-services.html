@@ -1,0 +1,19 @@
+<div class="row">	
+	<div class="project-meta col-sm-6 col-sm-push-5">
+		<h1>{{$ctrl.project.name}}</h1>
+	
+		<p>{{$ctrl.project.description1}}</p>
+		<p>{{$ctrl.project.description2}}</p>
+	
+		<ul class="clearfix project-thumbs">
+		  <li class="col-xs-6 col-sm-2" ng-repeat="img in $ctrl.project.images">
+		    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+		  </li>
+		</ul>
+	</div> <!-- close .project-meta -->
+
+	<div class="project-img col-sm-offset-1 col-sm-4 col-sm-pull-6">
+		<img ng-src="{{$ctrl.mainImageUrl}}" class="project" />
+	</div>
+
+</div> <!-- close .row -->

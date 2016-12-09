@@ -1,0 +1,78 @@
+/* Single property */
+html {
+	font-size: 62.5%;
+	font-size: 2vw;
+}
+
+body {
+	font-family: $bodyFont;
+  font-weight: 300;
+  line-height: 1.45;
+  color: $brand-primary;
+}
+
+p, .project-highlights, .sb-project-highlights {
+	@include fluid-type(font-size, 500px, 1600px, 16px, 20px);
+	@include fluid-type(letter-spacing, 500px, 1600px, .3px, .6px);
+	margin-bottom: .5rem;
+	font-weight: 400;
+	
+	@media #{$mediumAndAbove} {
+		font-weight: 300;
+	}
+}
+
+.header, .project-client, .sb-project-client {
+	font-family: $headerFont;
+}
+
+h1, h2, h3, h4 {
+  font-weight: inherit;
+  line-height: 1.4;
+  color: $brand-primary;
+  font-weight: 400;
+}
+
+h1 {
+	font-family: $headerFont;
+  margin-top: 0;
+	@include fluid-type(font-size, 500px, 1600px, 18px, 45px);
+	letter-spacing: .5px;
+}
+
+h2 {
+	@include fluid-type(font-size, 500px, 1600px, 24px, 30px);
+}
+
+h3 {
+	@include fluid-type(font-size, 500px, 1600px, 16px, 26px);
+	font-weight: 400;
+	
+	@media #{$mediumAndAbove} {
+		font-weight: 300;
+	}
+}
+
+.monogram, .sitename h1 {
+	font-weight: 700;
+	font-family: $headerFont;
+	@include fluid-type(font-size, 500px, 1600px, 16px, 26px);
+	@include fluid-type(line-height, 500px, 1600px, 40px, 60px);	
+}
+
+.nav-primary {
+	
+	.sitename h1 {
+	}
+	
+	.nav a {
+		@include fluid-type(font-size, 500px, 1600px, 16px, 20px);
+		font-weight: 400;
+
+		@media #{$mediumAndAbove} {
+			font-weight: 300;
+		}		
+	}
+}
+
+small, .font_small {font-size: 12px;}

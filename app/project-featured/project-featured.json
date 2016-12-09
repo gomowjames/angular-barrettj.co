@@ -1,0 +1,40 @@
+	{
+		"id": "gts-services",
+		"client": "GTS Services",
+		"website": "http://gtsservices.com",
+		"type": "Online Presence Overhaul, Company Re-branding",
+		"roles": "Lead-designer, Lead-developer",
+		"highlights":	[
+			"Complete overhaul of online presence",
+			"Multiple WordPress sites",
+			"Company rebranding",
+			"Content creation",
+			"Focus on SEO to search ranking"
+		],
+		"description1": "GTS Services in the Portland area hired me as their in-house designer/developer to completely revive their online presence. My first initiative was to rebrand the company geared towards expanding into markets the company was aiming to become a part of in the near future. They also had multiple websites that needed to be revived with updated design.",
+		"description2": "Included below are images from the main website build. A site map and wireframes were created initially to set the scope and rough in the content blocks that were to comprise the various pages. I also created an online style guide that could be referenced by other colleagues whenever necessary.",
+		"images": [
+		    "img/project-featured/homepage-500.jpg",
+		    "img/project-featured/pricing-500.jpg",
+		    "img/project-featured/autoglass-500.jpg",
+		    "img/project-featured/residential-500.jpg",
+				"img/project-featured/email-mobile-users-500.jpg",
+		    "img/project-featured/logo-update.jpg",
+		    "img/project-featured/process/website-map-full.jpg",
+		    "img/project-featured/process/product-wireframe-500.jpg",
+		    "img/project-featured/process/chargify-flowChart-500.jpg",
+		    "img/project-featured/style-guide-500.jpg"
+		  ],
+		  "fullSizeImages": [
+		    "img/project-featured/homepage-full.jpg",
+		    "img/project-featured/pricing-full.jpg",
+		    "img/project-featured/autoglass-full.jpg",
+		    "img/project-featured/residential-full.jpg",
+				"img/project-featured/email-mobile-users-full.jpg",
+		    "img/project-featured/logo-update-full.jpg",
+		    "img/project-featured/process/website-map-full.jpg",
+		    "img/project-featured/process/product-wireframe-full.jpg",
+		    "img/project-featured/process/chargify-flowChart-full.jpg",
+		    "img/project-featured/style-guide-full.jpg"
+		  ]
+	}

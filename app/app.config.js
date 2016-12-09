@@ -1,18 +1,17 @@
-'use strict';
-
 angular.
 	module('projectApp').
 	config(['$locationProvider', '$routeProvider',
 		function config($locationProvider, $routeProvider) {
 			$locationProvider.hashPrefix('!');
+			$locationProvider.html5Mode(true);
 			
 			$routeProvider.
-				when('/projects', {
-					template: '<project-list></project-list>'
+				when('/', {
+					template: '<project-featured></project-featured><project-list></project-list>'
 				}).
-				when('/projects/:projectId', {
+				when('/work/:projectId', {
 					template: '<project-detail></project-detail>'
 				}).
-				otherwise('/projects');
+				otherwise('/');
 		}
 	]);

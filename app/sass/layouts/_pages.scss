@@ -1,0 +1,196 @@
+html {
+}
+
+body {
+
+	@media #{$mediumAndAbove} {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.row.header {
+	padding-bottom: 4rem;
+	padding-top: 1rem;
+	text-align: center;
+	
+	@media #{$mediumAndAbove} {
+		text-align: left;
+		padding-bottom: 5rem;
+		padding-top: 5rem;
+	}
+	
+	h1 {
+		padding-bottom: 1.5rem;
+		display: inline-block;
+		margin: 0 auto;
+		@extend .section-border;
+
+		@media #{$mediumAndAbove} {
+			display: block;
+			padding-bottom: .5rem;
+			width: 100%;
+		}
+	}
+}
+
+nav.social-links {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	text-align: center;
+
+	@media #{$mediumAndAbove} {
+		text-align: left;
+		padding: 20px;
+	}
+	
+	ul > li {
+		display: inline-block;
+		padding: 2%;
+	
+	@media #{$mediumAndAbove} {
+		padding: 20px;
+	}
+	
+		&:first-of-type {
+			padding-left: 0;
+		}
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+	
+	ul > li > a.social-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+
+		@media #{$largeAndAbove} {
+	    width: 50px;
+	    height: 50px;
+		}
+    		
+		svg {
+			height: 100%;
+			width: 100%;
+			fill: $brand-primary;
+			background-color: #FFF;
+			@extend .transition;
+		
+			&:hover {
+				background-color: #EEE;
+				fill: darken($brand-primary, 10%);
+			}
+		}
+	}
+}
+
+.featured {
+	margin-bottom: 4rem;
+}
+
+.project-img img {
+	border: 1px solid #DDD;
+}
+
+.project-featured-thumbs {
+	margin-top: 40px;
+
+	li {
+		height: 14vw;
+		margin-bottom: 2vw;
+		overflow: hidden;
+	
+		&:first-of-type {
+			padding-left: 0;
+		}
+	}
+
+	img {
+		cursor: pointer;
+		border: 1px solid #DDD;
+		@extend .transition;
+
+		&:hover {
+			border: 1px solid #CCC;
+		}
+	}
+}
+
+.project-wrapper {
+	
+	.project-type {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	
+	.project-frame {
+		text-align: center;
+	}
+	
+	.project-client {
+		text-align: center;
+		margin-bottom: 1rem;
+		
+		@media #{$mediumAndAbove} {
+			text-align: left;
+			margin-bottom: 0;
+		}
+	}
+
+	.project-roles {
+		text-align: center;
+		
+		@media #{$mediumAndAbove} {
+			text-align: left;
+		}
+	}
+
+	.preview img {
+		margin-top: 20px;	
+
+		@media #{$mediumAndAbove} {
+			margin-top: 0;
+		}
+	}
+	
+	.project-data {
+		@media #{$mediumAndAbove} {
+			padding-left: 30px;
+		}
+	}
+
+	.project-highlights {
+		margin: 1rem 0;
+	}
+	
+	.project-snippet {
+		margin-bottom: 2rem;
+	
+		@media #{$mediumAndAbove} {
+			margin-bottom: 0;
+		}
+	}
+	
+	.line-break {
+		display: block;
+		width: 15%;
+		border-bottom: 1px solid $brand-primary;
+		margin: 8rem auto;
+	}
+}
+
+li.project-wrapper {
+}
+
+li.project-wrapper:last-of-type .line-break {
+	margin-bottom: 0rem;
+}
+
+.live-url a {
+	text-decoration: underline;
+}
+
+

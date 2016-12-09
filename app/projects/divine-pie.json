@@ -1,0 +1,22 @@
+	{
+		"id": "divine-pie",
+		"client": "Divine Pie",
+		"website": "http://divinepieportand.com/",
+		"type": "Website Design & Build",
+		"imageUrls": [
+			"img/projects/divine-pie/divine-pie-preview.jpg",
+			"img/projects/divine-pie/homepage-520.jpg"
+		],
+		"roles": "Co-designer, Co-developer",
+		"highlights":	[
+			"Client interaction",
+			"Hosting account setup / website transfer from Weebly.com",
+			"Responsive CSS using SASS",
+			"Custom Google Map - updatable by user through maps.google.com",
+			"Google Analytics & social media feeds setup ( Facebook )",
+			"Collaboration through GitHub"
+		],
+		"snippet": "A blossoming local dessert-maker in need of a new online presence.",
+		"description1":"My colleague, Savannah Julian, and I developed this website for Alissa at Divine Pie in Portland, OR as the company transitioned into a new branding. The site is a one-page scrolling page with a sticky navigation/title bar, a direct Facebook feed, a java-script comment carousel, jquery scrollTo navigation, and a customized Google map. Also the implementing of Sass with Compass to organize and generate your stylesheets kept things in harmony as we took this site from the ground up.",
+		"description2": ""
+	},

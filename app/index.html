@@ -9,33 +9,33 @@
 <html lang="en" id="ng-app" class="no-js" ng-app="projectApp"> <!--<![endif]-->
 	<head>
 		<title>Barrett James Butterfield - Web Designer & Developer</title>
+		
 		<meta charset="UTF-8" />
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
 		<link rel="stylesheet" href="app.css" />
-		
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="app.module.js"></script>
-    <script src="app.config.js"></script>
-    
-    <script src="project-list/project-list.module.js"></script>
-    <script src="project-list/project-list.component.js"></script>
-		<script src="project-detail/project-detail.module.js"></script>
-		<script src="project-detail/project-detail.component.js"></script>
-
+		<link rel="stylesheet" href="dist/assets/css/main.css" />
+		<link rel="stylesheet" href="app.animations.css" />
+		<script src="dist/assets/js/ng-deps.min.js"></script>
+		<script src="dist/assets/js/app-deps.min.js"></script>
+    <base href="/">
   </head>
-  <body>
+  <body class="">
+		<a class="monogram" href="http://barrettj.co">BJB</a>
 	<!--[if lt IE 7]>
 	<!-- etc… -->
-	<![endif]-->
+	<!--[endif]-->
 
-	<header ng-include='"views/header.html"'></header>
-
-
-	<div ng-view></div>
+		<header class="" ng-include='"views/header.html"'>
+		</header>	
 	
-	<footer ng-include='"views/footer.html"'></footer>
-	
+		<section class="container-fluid view-container">
+			<div ng-view></div>
+		</section>
+		
+		<footer class="container-fluid" ng-include='"views/footer.html"'></footer>
   </body>
 </html>

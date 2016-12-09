@@ -1,0 +1,69 @@
+// FONTS
+$headerFont:	'Oswald', Helvetica, Arial, sans-serif;
+$roleFont:		'DIN CondBold', Helvetica, Arial, sans-serif;
+$navFont:			'DIN CondMed', Helvetica, Arial, sans-serif;
+$bodyFont: 		'Open Sans', Helvetica, Arial, sans-serif;
+
+// FLUID TYPOGRAPHIC MIXINS
+@mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+  @each $property in $properties {
+    #{$property}: $min-value;
+  }
+
+  @media screen and (min-width: $min-vw) {
+    @each $property in $properties {
+      #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+    }
+  }
+
+  @media screen and (min-width: $max-vw) {
+    @each $property in $properties {
+      #{$property}: $max-value;
+    }
+  }
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// MEDIA QUERIES
+/* max-width 768px */
+$smallOnly: "only screen and (max-width: 47.9375em)";
+
+/* min-width 768px, medium screens */
+$mediumAndAbove: "only screen and (min-width: 48em)";
+
+/* min-width 768px and max-width 1024px */
+$mediumOnly: "only screen and (min-width: 48em) and (max-width: 64em)"; 
+
+/* min-width 1025px, large screens */
+$largeAndAbove: "only screen and (min-width: 64.063em)";
+
+
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:		#1792D1;
+$white:						#ffffff;
+$black: 					#6d6e71;
+$grey:						#b5b1ae;
+
+$BJBmonogram: 3.2rem;
+
+.section-border { 
+	border-bottom: 1px solid $brand-primary; 
+}
+
+.transition {
+	-webkit-transition: all 500ms ease-out;
+	-moz-transition: all 500ms ease-out;
+	-o-transition: all 500ms ease-out;
+	transition: all 500ms ease-out;
+}
+
