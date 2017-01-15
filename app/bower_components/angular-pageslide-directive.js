@@ -106,6 +106,7 @@
                     slider.style.transitionDuration = param.speed + 's';
                     slider.style.webkitTransitionDuration = param.speed + 's';
                     slider.style.height = param.size;
+										slider.style.height = window.screen.height;
                     slider.style.transitionProperty = 'top, bottom, left, right';
 
                     if (param.push) {
@@ -138,10 +139,13 @@
                     initSlider();
 
                     function initSlider() {
+												var screenHeight = window.screen.height;
+
                         switch (param.side) {
                             case 'right':
                                 slider.style.width = param.size;
-                                slider.style.height = '100%';
+                                slider.style.height = screenHeight + 'px';
+//                                  slider.style.height = '100%';
                                 slider.style.top = '0px';
                                 slider.style.bottom = '0px';
                                 slider.style.right = '0px';
@@ -171,6 +175,8 @@
                     }
 
                     function psClose(slider, param) {
+// 												slider.classList.remove("active");                       
+
                         switch (param.side) {
                             case 'right':
                                 slider.style.right = "-" + 100 + "%";
@@ -215,6 +221,8 @@
                     }
 
                     function psOpen(slider, param) {
+// 												slider.classList.add("active");
+
                         switch (param.side) {
                             case 'right':
                                 slider.style.right = "0px";

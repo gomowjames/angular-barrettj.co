@@ -33,8 +33,8 @@
 	top: 20px;
 	right: 20px;
 	z-index: 200;
-  display: inline-block;
-  float: right;
+//   display: inline-block;
+//   float: right;
   width: 30px;
   height: 30px;
   overflow: hidden;
@@ -69,4 +69,8 @@
 		-ms-transform: rotate(-45deg);
 		transform: rotate(-45deg);
   }
+}
+
+.active .close-btn {
+	position: fixed;
 }

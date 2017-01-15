@@ -39,8 +39,8 @@
 	        <a class="btn" href="" ng-click="toggle()">View more project details</a>
 				</div>
 
-				<div pageslide ps-size="95%" ps-open="checked" ps-body-class="true" ps-click-outside="true" class="container sidebar">
-          <div class="row">					
+				<div pageslide ps-size="95%" ps-open="checked" ps-key-listener="true" ps-body-class="true" ps-click-outside="true" class="container sidebar">
+          <header class="row">					
 						<a ng-click="toggle()" class="button close-btn"></a>
 
 						<div class="col-xs-12 sb-header-wrapper">
@@ -48,7 +48,7 @@
 							<p class="sb-project-type">{{project.type}}</p>
 							<p class="sb-project-roles">{{project.roles}}<p>
 						</div> <!-- close .project-header-wrapper -->
-          </div>
+          </header>
 
           <div class="row">	          
 						<ul class="col-xs-12 col-sm-6 col-sm-push-6 project-thumbs">

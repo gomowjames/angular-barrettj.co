@@ -271,8 +271,6 @@ small, .font_small {
   top: 20px;
   right: 20px;
   z-index: 200;
-  display: inline-block;
-  float: right;
   width: 30px;
   height: 30px;
   overflow: hidden;
@@ -296,6 +294,10 @@ small, .font_small {
 }
 .close-btn::after {
   transform: rotate(-45deg);
+}
+
+.active .close-btn {
+  position: fixed;
 }
 
 .monogram {
@@ -333,11 +335,11 @@ small, .font_small {
 header {
   margin-bottom: 20px;
   margin-bottom: 2rem;
+  position: relative;
 }
 @media only screen and (min-width: 48em) {
   header {
     margin-bottom: 50px;
-    margin-bottom: 2rem;
   }
 }
 
@@ -409,6 +411,55 @@ nav#navbar ul.nav.navbar-nav li a {
   text-transform: uppercase;
 }
 
+.ng-pageslide {
+  background: #F8F8F8;
+  overflow: scroll;
+}
+
+body.ng-pageslide-body-open::before {
+  /*     content: '.'; */
+  display: block;
+  position: absolute;
+  top: 0;
+  /*     background-color: rgb(0,0,0); */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.5;
+  transition: opacity 1s;
+  opacity: 0.5;
+  pointer-events: all;
+}
+
+body.ng-pageslide-body-closed::before {
+  transition: opacity 1s;
+  /*     content: '.'; */
+  display: block;
+  position: absolute;
+  top: 0;
+  /*     background-color: rgb(0,0,0); */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.ng-pageslide-body-open .ng-pageslide {
+  box-shadow: none;
+}
+
+body.ng-pageslide-body-open .ng-pageslide {
+  box-shadow: 0 0 20px 0 #ccc;
+}
+
+.sidebar > header.row {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .sidebar > .row {
   padding: 10px 0;
 }
@@ -461,11 +512,29 @@ nav#navbar ul.nav.navbar-nav li a {
   }
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 @media only screen and (min-width: 48em) {
   body {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+body.ng-pageslide-body-open {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
 }
 
 .row.header {
