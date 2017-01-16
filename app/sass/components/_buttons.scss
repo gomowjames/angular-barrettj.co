@@ -33,13 +33,18 @@
 	top: 20px;
 	right: 20px;
 	z-index: 200;
-//   display: inline-block;
-//   float: right;
   width: 30px;
   height: 30px;
   overflow: hidden;
 	cursor: pointer;
 
+	@media screen and (max-width: 450px) {
+		top: 6px;
+		right: 6px;
+		width: 20px;
+		height: 20px;
+	}
+  
   &:hover {
     &::before, &::after {
       background: $brand-primary;

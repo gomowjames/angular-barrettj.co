@@ -107,6 +107,10 @@ nav.social-links {
 
 .project-img img {
 	border: 1px solid #DDD;
+
+	@media #{$smallOnly} {
+		margin-top: 10px;
+	}
 }
 
 .project-featured-thumbs {
@@ -146,7 +150,7 @@ nav.social-links {
 	
 	.project-client {
 		text-align: center;
-		margin-bottom: 1rem;
+		margin-bottom: 0;
 		
 		@media #{$mediumAndAbove} {
 			text-align: left;
@@ -163,7 +167,7 @@ nav.social-links {
 	}
 
 	.preview img {
-		margin-top: 20px;	
+		margin-top: 10px;	
 
 		@media #{$mediumAndAbove} {
 			margin-top: 0;

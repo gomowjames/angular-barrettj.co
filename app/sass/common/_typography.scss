@@ -22,6 +22,13 @@ p, .project-highlights, .sb-project-highlights {
 	}
 }
 
+.project-type, .project-roles, .sb-project-type, .sb-project-roles {
+	@media #{$smallOnly} {
+		@include fluid-type(font-size, 500px, 1600px, 14px, 20px);
+// 		@include fluid-type(letter-spacing, 500px, 1600px, .3px, .6px);
+	}
+}
+
 .header, .project-client, .sb-project-client {
 	font-family: $headerFont;
 }
@@ -61,12 +68,10 @@ h3 {
 }
 
 .nav-primary {
-	
-	.sitename h1 {
-	}
-	
+		
 	.nav a {
 		@include fluid-type(font-size, 500px, 1600px, 16px, 20px);
+		@include fluid-type(line-height, 500px, 1600px, 40px, 60px);
 		font-weight: 400;
 
 		@media #{$mediumAndAbove} {
