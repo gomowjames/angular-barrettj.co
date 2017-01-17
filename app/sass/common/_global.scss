@@ -54,12 +54,11 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: none;
 }
 
 .project-highlights, .sb-project-highlights {
-	list-style: disc;
+	list-style: "•  " outside;
 	display: block;
 	padding-left: 20px;
 }

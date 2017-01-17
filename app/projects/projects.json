@@ -32,10 +32,33 @@
 		],
 		"roles": "Lead Designer, Lead Developer",
 		"highlights":	[
+			"Web design layout",
 			"Complete implementation using Squarespace CMS"
 		],
 		"snippet": "A rock'n'roll drummer needing a more focused web presence.",
 		"description1": "Daxx Nielsen called me up to setup his Squarespace website after finally feeling the need to have a solid homebase for his music, photos, and social media feeds. Constant touring as the drummer for classic rock group Cheap Trick didn't allow for too much one-on-one time so much of the setup process was done remotely exchanging ideas back and forth. The site is setup through Squarespace, which provides a streamilined process for putting a website together so it was no problem setting up, and it was a great overall experience learning a new system and working with a world-class rock'n'roller."
+	},
+	{
+		"id": "otradi",
+		"client": "OTRADI Bioscience Incubator",
+		"website": "http://otradi.org/",
+		"type": "WordPress Development",
+		"imageUrls": [
+			"img/projects/otradi/otradi-preview.jpg",
+			"img/projects/otradi/biomap-full-520.jpg"
+		],
+		"roles": "Lead Designer, Lead Developer",
+		"highlights":	[
+			"User-interface design",
+			"WordPress plugin customization",
+			"Customization through Google Maps API",
+			"Web design layout",
+			"JotForms implementation",
+			"Video editing"
+		],
+		"snippet": "A non-profit bioscience incubator in Portland that needed a system to map bioscience companies across the state of Oregon.",
+		"description1":"Through a word-of-mouth reference OTRADI reached out to me for someone to take control of the management of their main website. Prior to me coming onboard the website had been redesigned and developed using the popular Avada theme. Learning the in's and out's of this theme were no problem and offered great experience with getting comfortable with yet another widely utilized WordPress theme.",
+		"description2": "The most intense project I have worked on with OTRADI has been the customization of the Google Map plugin Map List Pro for use on the website as a visual directory of hundreds of biomedical start-ups across the state of Oregon. The map allows companies to add their own marker to the map (through the OTRADI JotForm account) and consistent participation has kept our database growing. The map has been featured in the Oregon Business Journal."
 	},
 	{
 		"id": "fiberfinish",
@@ -51,6 +74,7 @@
 		],
 		"roles": "Lead Designer, Lead Developer",
 		"highlights":	[
+			"Web design layout",
 			"Complete website build using HTML5, CSS3, and jQuery",
 			"Company rebranding",
 			"Content creation",
@@ -58,27 +82,6 @@
 		],
 		"snippet": "A small business that was in need of a website, SEO, and an identity.",
 		"description1": "FiberFinish is a repair company from my hometown that was in need of a website as well as a facelift on their branding. They had a minimal online presence and wished to improve their Google search ranking to generate more business, but of course they had minimal budget. I set to work defining their target demographic they were most interested in expanding upon, which resulted in a light and fresh aesthetic but not too delicate that a remodeling contractor might not pick up the phone. I also generated a simple content strategy while creating their content that has improved their Google search rankings dramatically... putting them on page one for the related inquiries we targeted."
-	},
-{
-		"id": "otradi",
-		"client": "OTRADI Bioscience Incubator",
-		"website": "http://otradi.org/",
-		"type": "WordPress Customization",
-		"imageUrls": [
-			"img/projects/otradi/otradi-preview.jpg",
-			"img/projects/otradi/biomap-full-520.jpg"
-		],
-		"roles": "Lead Designer, Lead Developer",
-		"highlights":	[
-			"WordPress plugin customization",
-			"Customization through Google Maps API",
-			"Web design",
-			"JotForms implementation",
-			"Video editing"
-		],
-		"snippet": "A non-profit bioscience incubator in Portland that needed a system to map bioscience companies across the state of Oregon.",
-		"description1":"Through a word-of-mouth reference OTRADI reached out to me for someone to take control of the management of their main website. Prior to me coming onboard the website had been redesigned and developed using the popular Avada theme. Learning the in's and out's of this theme were no problem and offered great experience with getting comfortable with yet another widely utilized WordPress theme.",
-		"description2": "The most intense project I have worked on with OTRADI has been the customization of the Google Map plugin Map List Pro for use on the website as a visual directory of hundreds of biomedical start-ups across the state of Oregon. The map allows companies to add their own marker to the map (through the OTRADI JotForm account) and consistent participation has kept our database growing. The map has been featured in the Oregon Business Journal."
 	},
 	{
 		"id": "mkbr-wedding",
@@ -104,6 +107,6 @@
 			"Calligraphy envelope addressing"	
 		],
 		"snippet": "An exercise in putting a website up in 48 hours. I also took care of the invitations for this wedding.",
-		"description1": ""
+		"description1": "The speed of putting a legitmate website up is something that can only be quickened qith experience. The website is a one-page design that I planned and put up in the span of 48 hours. It uses Bootstrap to handle the css and modal windows and a simple bit of Google Map code to handle the location details. Animating SVG's is something I've always loved so I enjoyed being able to finally use the technique in a project."
 	}
 ]

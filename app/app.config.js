@@ -9,9 +9,6 @@ angular.
 				when('/', {
 					template: '<project-featured></project-featured><project-list></project-list>'
 				}).
-				when('/work/:projectId', {
-					template: '<project-detail></project-detail>'
-				}).
 				otherwise('/');
 		}
 	]);

@@ -106,8 +106,8 @@
                     slider.style.transitionDuration = param.speed + 's';
                     slider.style.webkitTransitionDuration = param.speed + 's';
                     slider.style.height = param.size;
-										slider.style.height = window.screen.height;
                     slider.style.transitionProperty = 'top, bottom, left, right';
+                    slider.style.transitionTimingFunction= 'cubic-bezier(0.550, 0.085, 0.680, 0.530)';
 
                     if (param.push) {
                         body.style.position = 'absolute';
@@ -144,8 +144,7 @@
                         switch (param.side) {
                             case 'right':
                                 slider.style.width = param.size;
-                                slider.style.height = screenHeight + 'px';
-//                                  slider.style.height = '100%';
+                                slider.style.height = '100%';
                                 slider.style.top = '0px';
                                 slider.style.bottom = '0px';
                                 slider.style.right = '0px';
