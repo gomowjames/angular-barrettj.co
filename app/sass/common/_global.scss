@@ -58,7 +58,11 @@ a:focus {
 }
 
 .project-highlights, .sb-project-highlights {
-	list-style: "•  " outside;
+	list-style: square outside;
 	display: block;
 	padding-left: 20px;
+}
+
+.project-highlights li {
+	margin-bottom: 6px;
 }
